@@ -1,0 +1,23 @@
+﻿@model CouponViewModel
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+                <h2>
+                    @Html.Raw(Model.Describe)
+                </h2>
+                <span style="background-color:#FE316C; margin: 20px 0px" class="badge badge-pill badge-success">Khuyến mãi</span>
+        </div>
+        <div class="row">
+                <p>Mã coupon: <span style="font-style:italic; color:red">@Model.Code</span> </p>
+                <p>Còn lại: <span style="font-style:italic; color:red">@Model.Count</span> </p>
+                <p>Bạn chỉ cần nhập mã coupon trên vào mục ÁP DỤNG COUPON khi thanh toán</p>
+                <p>Lưu ý: <span style="font-style:italic; color:red">Mỗi mã coupon chỉ sử dụng được 1 lần</span></p>
+        </div>
+        <div class="row">
+            <div class="col-md-12 banner-img">
+                <img style="border-radius: 25px;margin: 20px 0px;width:1000px; height:600px" src="~/img/flashSALE1.jpg" alt="Alternate Text" />
+            </div>    
+        </div>
+    </div>
+</div>
